@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="crumbs">
+        <ol>
+            
+            <li class="crumb"><a href="app.html">Home</a></li>
+            <li class="crumb"><a href="app.html">About</a></li>
+            <li class="crumb"><a href="registration.html">Contact</a></li>
+            <a href="app.html" class="crumb">Login</a>
+
+    
+        </ol>
+    </nav>
+<div class="container">
+<div class="main">
+<form action="#" method="post" >
+<h2>Login</h2>
+<label>Email </label>
+<input id="email" name="email" placeholder="Email = tester@gmail.com" type="text">
+<label>Password </label>
+<input id="password" name="password" placeholder="password = test123" type="password">
+<input type="button" value="Login" id="submit" onclick="hi()"/>
+</form>
+</div>
+</div>
+
+<script>
+    
+    function hi() {
+        var email = document.getElementById("email").value;
+        console.log(email);
+        var password = document.getElementById("password").value;
+        if(email === 'tester@gmail.com'&& password=== 'test123'){
+            window.location = "registration.html";
+         return false
+        }else{
+            alert('Invalid Email or Password')
+        }
+    }
+ </script>
+</body>
+ </html>
+
+
